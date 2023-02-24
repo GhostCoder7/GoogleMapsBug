@@ -11,7 +11,7 @@ import GoogleMaps
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let GOOGLE_API_KEY = "INSERT_KEY";
+    let GOOGLE_API_KEY = "AIzaSyDorZAxSOpevYN051aq0Qm21G3j0b_TVVo"; //<< This key is temporary and will be destroyed within a few days. Provided for Google debugging only.
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

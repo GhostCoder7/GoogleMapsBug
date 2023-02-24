@@ -11,7 +11,7 @@ import GoogleMaps
 class ViewController: UIViewController,GMSMapViewDelegate {
 
     
-    
+    public let MAP_ID = "880b2ca14a9a0518"; 
     @IBOutlet var mapViewContainer:UIView!
     
     override func viewDidLoad() {
@@ -19,7 +19,15 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         
         //Initiate map view and camera
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        
+        
+        //Normal map
         let mapView = GMSMapView.map(withFrame: mapViewContainer.frame, camera: camera)
+        
+        //Styled map
+        //let mapView = GMSMapView(frame: mapViewContainer.frame, mapID: GMSMapID(identifier: MAP_ID), camera: camera)
+        
+        //Assign map to view
         view = mapView;
         
         //Set map view delegate to handle changes
