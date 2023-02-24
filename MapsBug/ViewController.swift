@@ -22,10 +22,10 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         
         
         //Normal map
-        let mapView = GMSMapView.map(withFrame: mapViewContainer.frame, camera: camera)
+        //let mapView = GMSMapView.map(withFrame: mapViewContainer.frame, camera: camera)
         
         //Styled map
-        //let mapView = GMSMapView(frame: mapViewContainer.frame, mapID: GMSMapID(identifier: MAP_ID), camera: camera)
+        let mapView = GMSMapView(frame: mapViewContainer.frame, mapID: GMSMapID(identifier: MAP_ID), camera: camera)
         
         //Assign map to view
         view = mapView;
